@@ -3,11 +3,19 @@
     This app uses docker.
 
 # Starting the Services
-    docker-compose up (Start containers)
+    docker-compose up --build
+    
     Backend server is live on http://localhost:8000
-    And MongoDB is running on http://localhost:27017
 
-# Maintenance & Inspection
-   docker-compose ps (Inspect container)
-   docker-compose stop (Stop containers)
-   docker-compose down --volumes (Stop and remove volumes)
+    MongoDB is running on http://localhost:27017
+
+    Client is running on http://localhost:3000
+
+# Inspection
+   docker-compose ps
+
+# Stop services
+   docker-compose stop
+
+# Kill and remove volumes
+   docker-compose down --volumes
